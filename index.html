@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ad1c705c3a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="testimonial">
+            <div class="testimonial-text">
+                <div class="user-text active-text">
+                    <i class="fas fa-quote-left"></i>
+                    <p>不惜一切代价去选择对人类最有益的决定。 而事实证明他的目光无比深远，为此所执行的手段也坚定决绝。 他的信念从一开始就坚定不移。 他伪装必胜信念，劫持“自然选择”号太空舰。“没关系的，都一样。”</p><span>章北海</span>
+                </div>
+                <div class="user-text">
+                    <i class="fas fa-quote-left"></i>
+                    <p>第四位面壁者，初代执剑人，建立黑暗森林威慑，开创了威慑纪元
+                        坚守执剑换来人类62年和平发展，间接使地球文明延续近两百年，生存至二向箔降维打击来临。最后作为人类文明的守墓人，在冥王星上与太阳系一同被二维化而死亡。</p><span>罗辑</span>
+                </div>
+                <div class="user-text">
+                    <i class="fas fa-quote-left"></i>
+                    <p>言行举止粗俗，有时一脸傻笑，有时异常严肃；观察力敏锐，察言观色几乎到了读心的水平，也很善于抓住他人性格中的弱点。</p><span>史强</span>
+                </div>
+                <div class="user-text">
+                    <i class="fas fa-quote-left"></i>
+                    <p>褚岩原为亚洲舰队“蓝色空间号“舰长，在章北海操纵“自然选择”号逃离太阳系后，联同另外三艘舰（北美舰队“企业”号、欧洲舰队“终极规律”号和亚洲舰队和“深空”号）追击”自然选择号“，让本舰和另外三艘追击舰船和”自然选择号“在“水滴”全面击溃地球太空舰队的战争中幸免于难，之后于太阳系外五艘战舰成立星舰地球。</p><span>褚岩</span>
+                </div>
+                <div class="user-text">
+                    <i class="fas fa-quote-left"></i>
+                    <p>在刚从冬眠中苏醒不久的章北海担任执行舰长期间，随战舰被劫持。后在联合舰队全军覆没于三体文明发射的“水滴”探测器之后，自然选择号与四艘追击战舰“蓝色空间”号、“企业”号、“深空号”和“终极规律”号建立了新政权——“星舰地球”并脱离地球文明。东方延绪继续担任自然选择号舰长。</p><span>东方延续</span>
+                </div>
+            </div>
+            <div class="testimonial-pic">
+                <img src="./章北海.webp" class="user-pic active-pic" onclick="showReview()">
+                <img src="./罗辑.webp" class="user-pic" onclick="showReview()">
+                <img src="./史强.webp" class="user-pic" onclick="showReview()">
+                <img src="./储岩.webp" class="user-pic" onclick="showReview()">
+                <img src="./东方.webp" class="user-pic" onclick="showReview()">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let userTexts=document.getElementsByClassName("user-text")
+        let userPics=document.getElementsByClassName("user-pic")
+function showReview(){
+    for(userPic of userPics){
+        userPic.classList.remove("active-pic")
+    }
+    for(userText of userTexts){
+        userText.classList.remove("active-text")
+    }
+    let i=Array.from(userPics).indexOf(event.target)
+    userPics[i].classList.add("active-pic")
+    userTexts[i].classList.add("active-text")
+}
+
+
+
+    </script>
+</body>
+
+</html>
